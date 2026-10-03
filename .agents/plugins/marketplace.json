@@ -1,0 +1,20 @@
+{
+  "name": "token-context-optimizer",
+  "interface": {
+    "displayName": "Token Context Optimizer Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "token-context-optimizer",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

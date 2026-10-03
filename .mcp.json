@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "token-context-optimizer": {
+      "command": "node",
+      "args": ["./bin/optimizer-mcp.js"],
+      "cwd": "."
+    }
+  }
+}
