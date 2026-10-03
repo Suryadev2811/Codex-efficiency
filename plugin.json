@@ -1,0 +1,6 @@
+{
+  "id": "token-context-optimizer",
+  "name": "Token Context Optimizer",
+  "version": "1.0.0",
+  "description": "Minimizes unnecessary context window usage while preserving vital debugging and structural information."
+}

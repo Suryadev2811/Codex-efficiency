@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "token-optimizer": {
+      "command": "node",
+      "args": [
+        "${PLUGIN_ROOT}/bin/optimizer-mcp.js"
+      ]
+    }
+  }
+}
