@@ -1,0 +1,21 @@
+{
+  "name": "token-context-optimizer",
+  "version": "1.0.0",
+  "description": "Optimizes context window by compressing large outputs and extracting structural AST outlines.",
+  "hooks": {
+    "AfterTool": [
+      {
+        "name": "Post Tool Use Compressor",
+        "command": "node ${PLUGIN_ROOT}/bin/post-tool-use.js",
+        "description": "Compresses verbose tool outputs, specifically Git and testing tools, saving context tokens."
+      }
+    ],
+    "PreCompress": [
+      {
+        "name": "Pre Compact Analytics Reporter",
+        "command": "node ${PLUGIN_ROOT}/bin/pre-compact.js",
+        "description": "Reports local token savings metrics right before context is compressed."
+      }
+    ]
+  }
+}
